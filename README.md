@@ -17,7 +17,6 @@ Some tools that I used to make this game are:
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
 * [PDCurses Website](http://pdcurses.org)
 * [W3 Schools](http://www.w3schools.com/cpp)
 * [GeekforGeeks](http://www.geeksforgeeks.org)
