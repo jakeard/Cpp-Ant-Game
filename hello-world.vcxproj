@@ -24,6 +24,7 @@
     <ProjectGuid>{8e0059ac-cfd5-485a-acec-050dc305ad86}</ProjectGuid>
     <RootNamespace>helloworld</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>snake-game</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -143,17 +144,18 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="director.cpp" />
     <ClCompile Include="inputs.cpp" />
-    <ClCompile Include="outputs.cpp" />
-    <ClCompile Include="snake.cpp" />
-    <ClCompile Include="updates.cpp" />
+    <ClCompile Include="screen.cpp" />
+    <ClCompile Include="ant.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="director.h" />
     <ClInclude Include="food.h" />
     <ClInclude Include="inputs.h" />
-    <ClInclude Include="outputs.h" />
-    <ClInclude Include="snake.h" />
-    <ClInclude Include="updates.h" />
+    <ClInclude Include="screen.h" />
+    <ClInclude Include="ant.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="highscore.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

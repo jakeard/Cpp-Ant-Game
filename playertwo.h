@@ -1,13 +1,14 @@
 #pragma once
 #include <vector>
 using namespace std;
-class Snake {
+class PlayerTwo {
 private:
 	vector<char> body;
 
 public:
-	Snake();
+	PlayerTwo();
 	void addSegment();
 	vector<char> getBody();
 	int getSnakeSize();
 };
+

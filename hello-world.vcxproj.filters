@@ -24,16 +24,13 @@
     <ClCompile Include="inputs.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="outputs.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="snake.cpp">
+    <ClCompile Include="ant.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="food.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="updates.cpp">
+    <ClCompile Include="screen.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -44,17 +41,19 @@
     <ClInclude Include="food.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="snake.h">
+    <ClInclude Include="ant.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="inputs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="outputs.h">
+    <ClInclude Include="screen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="updates.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="highscore.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

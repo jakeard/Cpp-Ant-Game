@@ -1,12 +1,22 @@
 #pragma once
 #include "inputs.h"
-#include "snake.h"
+#include "ant.h"
+#include "screen.h"
+#include "food.h"
+
 class Director {
+	// director class header file
+private:
+	Ant ant;
+	Food food;
+	int waited = 0;
+	int score = 0;
 public:
-	int updateMove(char key);
-	//int doOutput();
-	void doUpdate(Snake snake, char key);
+	void updateFood(int y, int x);
+	void updateMove(char key, Input inputs);
+	void doUpdate(char key, Input inputs);
 	char getInput(Input inputs);
+	void updateFile();
 	void gameLoop();
-	void execute();
+	int execute();
 };

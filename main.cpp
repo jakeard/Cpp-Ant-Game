@@ -1,27 +1,17 @@
 #include <curses.h>
 #include "director.h"
-//#include <conio.h>
+#include <iostream>;
 using namespace std;
 
 int main()
 {
-    // start window
-    // PUT WINDOW IN OWN CLASS!!!!!!!!!!!!!!!!!!!!!!!!!
-    auto scr = initscr();
-    // print at coordinates y, x, string
-    mvprintw(13, 50, "Welcome to Snake");
-    mvprintw(15, 47, "Press any key to begin");
-    // refresh the window to include the new print
-    refresh();
-    // wait for key press
-    getch();
-    clear();
-    refresh();
     // instance of Director class
     Director d;
-    // execute method execute in Director class
-    d.execute();
+    // run method execute in Director class
+    int score = d.execute();
     // after game ends, close window
     endwin();
+    // print what score they got
+    cout << "\nYour score is: " << score << endl;
     return 0;
 }
